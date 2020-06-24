@@ -1,0 +1,190 @@
+.corp-blue {
+    color: #0062a0;
+}
+
+.corp-yellow {
+    color: #ffb400;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    line-height: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: calc(0.6em + 0.5vw);
+}
+
+body {
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    color: #363636;
+}
+
+header,
+main,
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    flex-shrink: 0;
+}
+
+header,
+footer {
+    width: 100vw;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+}
+
+header,
+footer {
+    min-height: 10vh;
+    text-align: center;
+    background-color: #363636;
+}
+
+footer {
+    display: flex;
+}
+
+main {
+    min-height: 80vh;
+}
+
+
+/* 
+footer {
+    min-height: 5vh;
+} */
+
+a {
+    text-decoration-line: none;
+    color: #363636;
+}
+
+a:hover {
+    text-decoration-line: underline;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+}
+
+#hero img {
+    width: 100%;
+}
+
+.hero_display {
+    min-height: 100%;
+}
+
+#about {
+    display: none;
+    min-height: 60%;
+}
+
+#about h1 {
+    border-bottom: 2px solid #363636;
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    border: 2px dashed #E3E3E3;
+    width: 10rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-decoration-line: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    border: 2px solid #363636;
+    text-decoration-line: none;
+}
+
+.hero_column1 {
+    width: 100%;
+}
+
+.hero_column2 {
+    width: 100%;
+    text-align: center;
+}
+
+#logo {
+    margin-top: 2em;
+}
+
+.hero_services {
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.copyright {
+    margin: auto;
+}
+
+#enquire {
+    margin-top: 1rem;
+}
+
+.about_content {
+    text-align: justify;
+}
+
+#about_actions {
+    text-align: center;
+}
+
+footer {
+    font-size: 0.8em;
+}
+
+@media only screen and (min-width: 768px) {
+    #hero {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #logo {
+        margin-top: 0;
+    }
+    .hero_column1 {
+        width: 60%;
+        padding-top: 0;
+    }
+    .hero_column2 {
+        width: 40%;
+        padding-top: 5vh;
+    }
+    .hero_services {
+        text-align: left;
+        padding-left: 2em;
+    }
+    #enquire {
+        float: right;
+    }
+    #hero_more {
+        float: right;
+    }
+}

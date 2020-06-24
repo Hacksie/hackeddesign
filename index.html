@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My name is Ben Wise, and I like to style myself as a software development fixer. A software hacker, of sorts (the good kind, mind you), and I'm a specialist in resolving difficult application, enterprise integration and game design problems">
+    <title>hacked design</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon64.png">
+    <link rel="stylesheet" type="text/css" href="assets/styles/hackeddesign.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Professional Services</li>
+                <li>Portfolio</li>
+                <li>Personal</li>
+                <li>Published</li>
+            </ul>
+        </nav>
+        <a id="enquire" class="button" href="mailto:enquire@hackeddesign.com?subject=hacked%20design%20enquiry">
+            enquire
+        </a>
+    </header>
+    <main>
+        <article id="hero" class="hero_display">
+            <div class="hero_column1">
+                <img id="logo" src="assets/images/hackeddesign_with_slogan.svg" type="image/svg+xml" />
+            </div>
+            <div class="hero_column2">
+                <ul class="hero_services">
+                    <li>behavioural application designs</li>
+                    <li>problematic enterprise integrations</li>
+                    <li>legacy app reverse engineering</li>
+                    <li>game design & script development</li>
+                </ul>
+                <a id="hero_more" class="button" onclick="show_about()">
+                    learn more
+                </a>
+            </div>
+        </article>
+        <article id="about">
+            <h1>about</h1>
+            <p class="about_content">
+                Do any of these ring a bell? Old systems you no longer understand, corporate systems that just don't work together, unhappy users unwilling to use your systems, games that seem dull and boring, technology that you just can't get your head around. And
+                are all your approaches failing to resolve them?
+            </p>
+            <p class="about_content">
+                My name is Ben Wise, and I like to style myself as a software development fixer. A software hacker, of sorts (the good kind, mind you), and I'm a specialist in resolving difficult application, enterprise integration and game design problems. My approach
+                is to work with you, to understand the behaviour of your audience, rethink the challenges blocking you, and help you be a little creative in the solutions to move you forward.
+            </p>
+            <p class="about_content">
+                I have 14 years experience solving the software design problems of a number of large Australian companies as a solution architect and software developer and have always put my little spin on the most difficult challenges.
+            </p>
+            <p id="about_actions">
+                <a id="return" class="button" onclick="show_hero()">
+                    return
+                </a>
+            </p>
+        </article>
+    </main>
+    <footer>
+        <span class="copyright">
+            &copy; 2020
+        </span>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        function show_about() {
+            $("#hero_footer").hide();
+            $("#hero_more").css("visibility", "hidden");
+
+            $("#hero").animate({
+                "min-height": "20%"
+            }, 400, function() {
+
+                $("#about").fadeIn(200);
+            });
+        }
+
+        function show_hero() {
+            $("#about").fadeOut(100, function() {
+                $("#hero_footer").show();
+                $("#hero_more").css("visibility", "visible");
+
+                $("#hero").animate({
+                    "min-height": "100%"
+                }, 400, function() {});
+            });
+        }
+    </script>
+</body>
+
+</html>
