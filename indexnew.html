@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="My name is Ben Wise, and I like to style myself as a software development fixer. A software hacker, of sorts (the good kind, mind you), and I'm a specialist in resolving difficult application, enterprise integration and game design problems">
+    <title>Ben Wise - hacked.design</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon64.png">
+    <link ref="stylesheet" href="assets/styles/reset.css">
+    <style>
+        body {
+            /*font-size: 1.4rem;*/
+            /*width: 99vw;*/
+            
+            
+            font-family: 'Montserrat';
+            
+
+            /*vertical-align: middle;*/
+
+
+        }
+
+        header {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #222;
+        }
+
+        header ul {
+            list-style-type: none;
+        }
+
+        header ul li {
+            display: inline-block;
+            vertical-align: middle;
+            margin:3px;
+        }
+
+        header #logo {
+            width:48px;
+        }
+
+        main {
+
+
+        }
+
+        article {
+            display:block;
+        }
+
+
+        #buttons {
+            display: grid;
+            gap: 3px;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            /*grid-template-rows: 1fr 1fr 1fr;*/
+
+            grid-template-areas:
+                "pro resume gamedev"
+                "books stories dinos"
+        }
+
+        #greeting {
+            grid-area: greeting;
+        }
+
+        #byline {
+            grid-area: byline;
+        }
+
+        #professional {
+            grid-area: pro;
+            border: 1px solid lightgrey;
+        }
+
+        #resume {
+            grid-area: resume;
+            border: 1px solid lightgrey;
+        }
+
+        #gamedev {
+            grid-area:gamedev;
+            border: 1px solid lightgrey;
+        }
+
+        #books {
+            grid-area:books;
+            border: 1px solid lightgrey;
+        }
+
+        #stories {
+            grid-area:stories;
+            border: 1px solid lightgrey;
+        }
+
+        #dinosaurs {
+            grid-area:dinos;
+            border: 1px solid lightgrey;
+        }
+
+        #hero {
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                
+                <li><a href="#">PROFESSIONAL</a></li>
+                <li><a href="#">RESUME</a></li>
+                <li><a href="#">GAME DEV PORTFOLIO</a></li>
+                <li><a href="#"><img id="logo" src="assets/images/icon_dot.svg" type="image/svg+xml" /></a></li>
+                <li><a href="#">BOOK PORTFOLIO</a></li>
+                <li><a href="#">SHORT STORIES</a></li>
+                <li><a href="#">DINOSAURS</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="hero">
+            <div id="greeting">Hello, I'm Ben Wise, and I created <img id="logo" src="assets/images/hackeddesign_with_slogan.svg" type="image/svg+xml" />.</div>
+            <div id="byline">Byline</div>
+        </article>
+        
+        <hr />
+        <div id="buttons">
+            <a href="#" id="button_professional">Professional</a>
+            <a href="#" id="button_resume">Resume</a>
+            <a href="#" id="button_gamedev">Game dev</a>
+            <a href="#" id="button_books">Books</a>
+            <a href="#" id="button_stories">Short stories</a>
+            <a href="#" id="button_dinosaurs">Dinosaurs</a>
+        </div>
+        <article id="professional">Professional</article>
+        <article id="resume">Resume</article>
+        <article id="gamedev">Game dev</article>
+        <article id="books">Books</article>
+        <article id="stories">Short stories</article>
+        <article id="dinosaurs">Dinosaurs</article>
+
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
